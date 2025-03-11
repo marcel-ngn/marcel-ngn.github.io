@@ -24,7 +24,7 @@ jobs:
 
       - name: Setup Hugo (v0.70.0)
         run: |
-          curl -L -o /tmp/hugo.tar.gz 'https://github.com/gohugoio/hugo/releases/download/v0.70.0/hugo_extended_0.70.0_linux-amd64.tar.gz'  # Download Hugo 0.70.0
+          curl -L -o /tmp/hugo.tar.gz 'https://github.com/gohugoio/hugo/releases/download/v0.70.0/hugo_0.70.0_Linux-64bit.tar.gz'  # Corrected URL for Hugo 0.70.0
           tar -C ${RUNNER_TEMP} -zxvf /tmp/hugo.tar.gz hugo  # Extract the Hugo binary
 
       - name: Check submodule status (for debugging)
