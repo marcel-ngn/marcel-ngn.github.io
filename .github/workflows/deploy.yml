@@ -13,7 +13,7 @@ jobs:
       - name: Checkout source
         uses: actions/checkout@v3
         with:
-          submodules: recursive  # Ensure all submodules, including nested, are initialized
+          submodules: recursive  # Ensures all submodules, including nested, are initialized
 
       - name: Checkout destination
         uses: actions/checkout@v3
@@ -22,19 +22,18 @@ jobs:
           ref: gh-pages
           path: built-site
 
-      - name: Setup Hugo
+      - name: Setup Hugo (v0.70.0)
         run: |
-          curl -L -o /tmp/hugo.tar.gz 'https://github.com/gohugoio/hugo/releases/download/v0.112.5/hugo_extended_0.112.5_linux-amd64.tar.gz'
-          tar -C ${RUNNER_TEMP} -zxvf /tmp/hugo.tar.gz hugo
+          curl -L -o /tmp/hugo.tar.gz 'https://github.com/gohugoio/hugo/releases/download/v0.70.0/hugo_extended_0.70.0_linux-amd64.tar.gz'  # Download Hugo 0.70.0
+          tar -C ${RUNNER_TEMP} -zxvf /tmp/hugo.tar.gz hugo  # Extract the Hugo binary
 
-      - name: List files in the repository (for debugging)
+      - name: Check submodule status (for debugging)
         run: |
-          echo "Listing contents of the repository"
-          ls -la
-          ls -la themes/
+          git submodule status  # Ensure submodule is initialized
+          ls -la themes/         # List themes to see if the theme exists
 
       - name: Build Hugo site
-        run: ${RUNNER_TEMP}/hugo
+        run: ${RUNNER_TEMP}/hugo  # Build the Hugo site using Hugo 0.70.0
 
       - name: Check if Hugo built the site
         run: |
@@ -48,7 +47,7 @@ jobs:
       - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/main'
         run: |
-          cp -R public/* ${GITHUB_WORKSPACE}/built-site/
+          cp -R public/* ${GITHUB_WORKSPACE}/built-site/  # Copy the generated site to the 'built-site' folder
           cd ${GITHUB_WORKSPACE}/built-site
           git add .
           git config user.name 'marcel.nguyen'
