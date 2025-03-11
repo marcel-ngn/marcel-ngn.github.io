@@ -28,7 +28,6 @@ Hello! I'm Marcel, currently working as an IAM Engineer at the HelloFresh Group 
 ---
 
 ## 📫 Let's Connect
-Feel free to connect with me and discuss anything related to **IAM, cloud security, and automation**!
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/marcel-nguyen-5b82631a3/)  [![GitHub](https://img.shields.io/badge/GitHub-Follow-black?logo=github)](https://github.com/marcel-ngn)
 
