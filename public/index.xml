@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MCL-NGN</title>
+    <link>http://marcel-ngn.github.com/</link>
+    <description>Recent content on MCL-NGN</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 11 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://marcel-ngn.github.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hello world</title>
+      <link>http://marcel-ngn.github.com/posts/11-03-2025-first-test/</link>
+      <pubDate>Tue, 11 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://marcel-ngn.github.com/posts/11-03-2025-first-test/</guid>
+      <description>&lt;h1 id=&#34;-hello-world&#34;&gt;&#xA;  🌍 Hello, World!&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#-hello-world&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;&#xA;  Introduction&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#introduction&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;This is my first blog entry. Hello World.&lt;/p&gt;&#xA;&lt;h2 id=&#34;-powershell&#34;&gt;&#xA;  🖥️ PowerShell&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#-powershell&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Write-Output&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Hello, World!&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>whoami</title>
+      <link>http://marcel-ngn.github.com/about/</link>
+      <pubDate>Tue, 11 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://marcel-ngn.github.com/about/</guid>
+      <description>&lt;p&gt;Hello! I&amp;rsquo;m Marcel, currently working as an IAM Engineer at the HelloFresh Group in Berlin. My work revolves around Identity and Access Management (IAM), particularly focusing on &lt;strong&gt;Entra ID&lt;/strong&gt; and other &lt;strong&gt;Azure services&lt;/strong&gt;. Passionate about &lt;strong&gt;cloud security&lt;/strong&gt;, I am always eager to learn, adapt, and share my knowledge with others.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-what-i-do&#34;&gt;&#xA;  🚀 What I Do&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#-what-i-do&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Extensive experience with &lt;strong&gt;IAM/IGA concepts&lt;/strong&gt; and best practices&lt;/li&gt;&#xA;&lt;li&gt;Strong technical skills in &lt;strong&gt;Entra ID, security, scripting, and monitoring&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Automating processes and building &lt;strong&gt;custom solutions&lt;/strong&gt; beyond out-of-the-box offerings&lt;/li&gt;&#xA;&lt;li&gt;Analytical mindset with excellent &lt;strong&gt;problem-solving skills&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-certifications&#34;&gt;&#xA;  🎯 Certifications&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#-certifications&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;🏆 &lt;strong&gt;Microsoft AZ-500&lt;/strong&gt; (Azure Security Engineer Associate)&lt;/li&gt;&#xA;&lt;li&gt;🏆 &lt;strong&gt;Microsoft SC-300&lt;/strong&gt; (Identity and Access Administrator Associate)&lt;/li&gt;&#xA;&lt;li&gt;🏆 &lt;strong&gt;Microsoft SC-900&lt;/strong&gt; (Security, Compliance, and Identity Fundamentals)&lt;/li&gt;&#xA;&lt;li&gt;🏆 &lt;strong&gt;Microsoft AZ-900&lt;/strong&gt; (Azure Fundamentals)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-lets-connect&#34;&gt;&#xA;  📫 Let&amp;rsquo;s Connect&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#-lets-connect&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Feel free to connect with me and discuss anything related to &lt;strong&gt;IAM, cloud security, and automation&lt;/strong&gt;!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>temas</title>
+      <link>http://marcel-ngn.github.com/categoria/temas/</link>
+      <pubDate>Wed, 04 Jan 2023 23:21:18 +0100</pubDate>
+      <guid>http://marcel-ngn.github.com/categoria/temas/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>sintaxe</title>
+      <link>http://marcel-ngn.github.com/categoria/sintaxe/</link>
+      <pubDate>Wed, 04 Jan 2023 23:21:06 +0100</pubDate>
+      <guid>http://marcel-ngn.github.com/categoria/sintaxe/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Códigos curtos</title>
+      <link>http://marcel-ngn.github.com/tags/shortcodes/_index.pt-br/</link>
+      <pubDate>Wed, 04 Jan 2023 11:51:36 +0100</pubDate>
+      <guid>http://marcel-ngn.github.com/tags/shortcodes/_index.pt-br/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>http://marcel-ngn.github.com/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://marcel-ngn.github.com/contact/</guid>
+      <description>&lt;h1 id=&#34;-contact-me&#34;&gt;&#xA;  📬 Contact Me&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#-contact-me&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title>Projects</title>
+      <link>http://marcel-ngn.github.com/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://marcel-ngn.github.com/projects/</guid>
+      <description>&lt;p&gt;Coming soon &amp;hellip;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
