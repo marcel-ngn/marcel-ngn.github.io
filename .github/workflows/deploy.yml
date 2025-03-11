@@ -1,4 +1,5 @@
 name: Publish to GH Pages
+
 on:
   push:
     branches:
@@ -12,7 +13,7 @@ jobs:
       - name: Checkout source
         uses: actions/checkout@v3
         with:
-          submodules: true
+          submodules: recursive  # Ensure all submodules, including nested, are initialized
 
       - name: Checkout destination
         uses: actions/checkout@v3
@@ -23,12 +24,28 @@ jobs:
 
       - name: Setup Hugo
         run: |
-          curl -L -o /tmp/hugo.tar.gz 'https://github.com/gohugoio/hugo/releases/download/v0.110.0/hugo_extended_0.110.0_linux-amd64.tar.gz'
+          curl -L -o /tmp/hugo.tar.gz 'https://github.com/gohugoio/hugo/releases/download/v0.112.5/hugo_extended_0.112.5_linux-amd64.tar.gz'
           tar -C ${RUNNER_TEMP} -zxvf /tmp/hugo.tar.gz hugo
-      - name: Build
+
+      - name: List files in the repository (for debugging)
+        run: |
+          echo "Listing contents of the repository"
+          ls -la
+          ls -la themes/
+
+      - name: Build Hugo site
         run: ${RUNNER_TEMP}/hugo
 
-      - name: Deploy
+      - name: Check if Hugo built the site
+        run: |
+          if [ ! -d "public" ]; then
+            echo "Hugo build failed or 'public' directory not found!"
+            exit 1
+          else
+            echo "Hugo build successful!"
+          fi
+
+      - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/main'
         run: |
           cp -R public/* ${GITHUB_WORKSPACE}/built-site/
