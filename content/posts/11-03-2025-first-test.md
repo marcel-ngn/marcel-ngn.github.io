@@ -12,10 +12,10 @@ categories = [
 series = [""]
 +++
 
-# 🌍 Hello, World!
+# Hello, World! 
 
 ## Introduction
-This is my first blog entry. Hello World.
+This is my first blog entry. Hello World. 👋🏼
 
 
 ## 🖥️ PowerShell
