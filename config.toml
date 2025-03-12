@@ -26,7 +26,7 @@ author = "Marcel Nguyen"
 # license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
 description = "Marcel's personal blog"
 keywords = "blog,engineer,personal,security"
-info = ["IAM Engineer", "Automator"]
+info = ["IAM Engineer", "Berlin"]
 avatarURL = "images/avatar.jpg"
 #gravatar = "john.doe@example.com"
 dateFormat = "January 2, 2006"
@@ -158,9 +158,9 @@ url = "https://www.linkedin.com/in/marcel-nguyen-5b82631a3/"
 languageName = ":uk:"
 
 [[languages.en.menu.main]]
-name = "About"
+name = "whoami"
 weight = 1
-url = "about/"
+url = "whoami/"
 
 [[languages.en.menu.main]]
 name = "Blog"
