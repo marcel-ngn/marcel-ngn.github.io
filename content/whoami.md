@@ -1,5 +1,5 @@
 +++
-title = "whoami"
+title = "who am i?"
 description = ""
 date = "2025-03-11"
 aliases = ["about-us", "about-hugo", "contact"]
@@ -7,12 +7,12 @@ author = "Marcel Nguyen"
 +++
 
 
-Hello! I'm Marcel, currently working as an IAM Engineer at the HelloFresh Group in Berlin. My work revolves around Identity and Access Management (IAM), particularly focusing on **Entra ID** and other **Azure services**. Passionate about **cloud security**, I am always eager to learn, adapt, and share my knowledge with others.
+Hello! I'm Marcel, currently working as an IAM Engineer at the HelloFresh Group in Berlin. My work revolves around Identity and Access Management (IAM) and Security, focusing on **Microsoft Azure**. 
 
 ---
 
 ## 🚀 What I Do
-- Extensive experience with **IAM/IGA concepts** and best practices
+- Extensive experience with **IAM/IGA** and **Security** best practices
 - Strong technical skills in **Entra ID, security, scripting, and monitoring**
 - Automating processes and building **custom solutions** beyond out-of-the-box offerings
 - Analytical mindset with excellent **problem-solving skills**
