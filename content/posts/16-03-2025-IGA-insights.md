@@ -1,7 +1,7 @@
 +++
 authors = ["Marcel Nguyen"]
 title = "IGA Insights"
-date = "2025-03-11"
+date = "2025-03-16"
 description = "IGA Insights"
 tags = [
     "IAM","IGA","PowerShell","KQL","Entra","Azure",
@@ -103,7 +103,7 @@ This query finds all users who have signed in to the specified application withi
 
 ### 3. Group Membership Retrieval
 
-The script identifies which groups have access to the application and gets all members from those groups:
+The script identifies which groups are assigned to the application and gets all members from those groups:
 
 ```powershell
 function Get-EnterpriseAppGroups {
