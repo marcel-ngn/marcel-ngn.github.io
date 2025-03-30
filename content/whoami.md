@@ -7,7 +7,7 @@ author = "Marcel Nguyen"
 +++
 
 
-Hello! I'm Marcel, currently working as an IAM Engineer at the HelloFresh Group in Berlin. My work revolves around Identity and Access Management (IAM) and Security, focusing on **Microsoft Azure**. 
+Hello! I'm Marcel, currently working as an Security Consultant at Skaylink. My work revolves around the whole **Microsoft Azure Security Stack**. 
 
 ---
 
