@@ -7,7 +7,7 @@ author = "Marcel Nguyen"
 +++
 
 
-Hello! I'm Marcel, currently working as an Security Consultant at Skaylink. My work revolves around the whole **Microsoft Azure Security Stack**. 
+Hello! I'm Marcel, currently working as a Cloud Security Consultant in the Cyber Defense team at Skaylink. My work revolves around the whole **Microsoft Azure Security Stack**. 
 
 ---
 
