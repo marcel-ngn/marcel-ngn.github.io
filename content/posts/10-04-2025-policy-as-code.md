@@ -17,7 +17,7 @@ series = [""]
 In this blog article, I want to show you how I built a proof-of-concept for deploying Conditional Access Policies in a DevOps approach via GitHub Actions.
 I will use GitHub, GitHub Actions, and PowerShell to achieve that. 
 
-![alt text](overview.png)
+![alt text](../../static/images/10-04-2025-policy-as-code-images/overview.png)
 
 ## 🤔 Why should I create policies with GitHub, isn't that "overengineered"?
 
@@ -54,7 +54,7 @@ We need an app registration in Entra ID. This app registration will have the per
 
 To create the app registration, navigate in the search bar to "App Registrations" and click on "New Registration".
 
-![alt text](app-reg-screenshot.png)
+![alt text](../../static/images/10-04-2025-policy-as-code-images/app-reg-screenshot.png)
 
 #### Assign API Permissions
 We will need to assign API permissions in scope of Graph API to allow the application to read and write Conditional Access policies.
@@ -66,14 +66,14 @@ Select "API permissions" then "Add a permission". Add the following application 
 
 After assigning the permissions, click on "Grant admin consent for ..." to consent to the permissions.
 
-![alt text](<app-reg-api permission.png>)
+![alt text](<../../static/images/10-04-2025-policy-as-code-images/app-reg-api permission.png>)
 
 #### Create Secret for Authentication
 For my MVP version, I quickly created a set of client credentials consisting of a client-id, tenant-id, and a client-secret. However, this is not best practice, and you should look into federated credentials for your production environment.
 
 To create a secret, click on "Certificates & secrets" and create a new client-secret in the "Client secrets" tab. Copy the value; we will need it later.
 
-![alt text](app-reg-secret.png)
+![alt text](../../static/images/10-04-2025-policy-as-code-images/app-reg-secret.png)
 
 ### Channel for Notification
 Since I'm privately not using a communication platform like MS Teams or Slack, I need to send notifications to a ntfy.sh channel.
@@ -496,24 +496,26 @@ Go to "Settings" then "Secrets and variables". Under Actions, you can create new
 3. AZURE_TENANT_ID
 4. NTFY_URL
 
-![alt text](github-secrets.png)
+![alt text](../../static/images/10-04-2025-policy-as-code-images/github-secrets.png)
 
 ### Start Your First Pipeline Run
 If everything is set up correctly, you should be able to execute the workflow. Go to "Actions". Select "Deploy Conditional Access Policies" on the left side and Run the workflow.
 
-![alt text](github-run-pipeline.png)
-![alt text](validation.png)
-![alt text](completed-run.png)
+![alt text](../../static/images/10-04-2025-policy-as-code-images/github-run-pipeline.png)
+
+![alt text](../../static/images/10-04-2025-policy-as-code-images/validation.png)
+
+![alt text](../../static/images/10-04-2025-policy-as-code-images/completed-run.png)
 
 
 ### Result in Entra ID
 You can see that the policy has been deployed successfully to Entra ID.
 
-![alt text](conditionalaccesspolicy-azureportal.png)
+![alt text](../../static/images/10-04-2025-policy-as-code-images/conditionalaccesspolicy-azureportal.png)
 
 I also received a notification via ntfy.sh
 
-![alt text](notification.png)
+![alt text](../../static/images/10-04-2025-policy-as-code-images/notification.png)
 
 ## Conclusion
 
