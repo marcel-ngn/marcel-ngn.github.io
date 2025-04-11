@@ -12,8 +12,6 @@ categories = [
 series = [""]
 +++
 
-# Automating Azure Security: Deploying Conditional Access Policies via GitHub Actions
-
 ## Introduction
 
 In this blog article, I want to show you how I built a proof-of-concept for deploying Conditional Access Policies in a DevOps approach via GitHub Actions.
