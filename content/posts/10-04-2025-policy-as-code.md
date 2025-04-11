@@ -66,7 +66,7 @@ Select "API permissions" then "Add a permission". Add the following application 
 
 After assigning the permissions, click on "Grant admin consent for ..." to consent to the permissions.
 
-![alt text](<../../static/images/10-04-2025-policy-as-code-images/app-reg-api permission.png>)
+![alt text](https://github.com/marcel-ngn/marcel-ngn.github.io/blob/main/static/images/10-04-2025-policy-as-code-images/app-reg-api%20permission.png)
 
 #### Create Secret for Authentication
 For my MVP version, I quickly created a set of client credentials consisting of a client-id, tenant-id, and a client-secret. However, this is not best practice, and you should look into federated credentials for your production environment.
