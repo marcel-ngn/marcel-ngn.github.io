@@ -513,6 +513,10 @@ You can see that the policy has been deployed successfully to Entra ID.
 
 ![alt text](conditionalaccesspolicy-azureportal.png)
 
+I also received a notification via ntfy.sh
+
+![alt text](notification.png)
+
 ## Conclusion
 
 This approach provides a robust way to manage Conditional Access policies as code, offering benefits such as version control, automated validation, peer reviews, reduced attack surface, and easy disaster recovery. By leveraging GitHub Actions and PowerShell, you can automate the deployment process and maintain consistent security policies across your environment.
