@@ -1,6 +1,6 @@
 +++
 authors = ["Marcel Nguyen"]
-title = "Automating Azure Security: Deploying Conditional Access Policies via GitHub Actions"
+title = "Deploy Conditional Access Policies with GitHub Actions"
 date = "2025-04-16"
 description = "IGA Insights"
 tags = [
@@ -12,7 +12,7 @@ categories = [
 series = [""]
 +++
 
-# ⚙️ Automating Azure Security: Deploying Conditional Access Policies via GitHub Actions
+# ⚙️ Automating Azure Security: Deploying Conditional Access Policies with GitHub Actions. A POC-Version.
 
 ## Table of Contents
 - [Introduction](#introduction)
