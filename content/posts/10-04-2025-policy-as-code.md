@@ -1,7 +1,7 @@
 +++
 authors = ["Marcel Nguyen"]
 title = "Automating Azure Security: Deploying Conditional Access Policies via GitHub Actions"
-date = "2025-04-10"
+date = "2025-04-16"
 description = "IGA Insights"
 tags = [
     "IaC", "Conditional Access", "Security", "GitHub", "Entra", "Azure"
@@ -12,14 +12,29 @@ categories = [
 series = [""]
 +++
 
+# Automating Azure Security: Deploying Conditional Access Policies via GitHub Actions
+
+## Table of Contents
+- [Introduction](#introduction)
+- [Why Use GitHub for Policies?](#why-use-github-for-policies)
+- [Building the Solution](#building-the-solution)
+  - [Prerequisites](#prerequisites)
+  - [App Registration](#app-registration)
+  - [Channel for Notification](#channel-for-notification)
+  - [GitHub Repository](#github-repository)
+  - [Deploy Your First Policy](#deploy-your-first-policy)
+- [Conclusion](#conclusion)
+  - [Key Benefits](#key-benefits)
+  - [Next Steps](#next-steps)
+
 ## Introduction
 
 In this blog article, I want to show you how I built a proof-of-concept for deploying Conditional Access Policies in a DevOps approach via GitHub Actions.
 I will use GitHub, GitHub Actions, and PowerShell to achieve that. 
 
-![alt text](/images/10-04-2025-policy-as-code-images/overview.png)
+![Conditional Access deployment overview diagram](/images/10-04-2025-policy-as-code-images/overview.png)
 
-## 🤔 Why should I create policies with GitHub, isn't that "overengineered"?
+## Why Use GitHub for Policies?
 
 First of all, yes. It takes some time to configure the whole setup to deploy Conditional Access policies via code. You might be quicker by clicking through the Azure portal. However, this approach definitely brings some benefits with it:
 
@@ -40,7 +55,7 @@ First of all, yes. It takes some time to configure the whole setup to deploy Con
 
 I think there are even more advantages; however, I hope this should be enough to convince you to look into this.
 
-## 👨‍💻 Let's Start to Build 
+## Building the Solution
 
 ### Prerequisites
 
@@ -54,7 +69,7 @@ We need an app registration in Entra ID. This app registration will have the per
 
 To create the app registration, navigate in the search bar to "App Registrations" and click on "New Registration".
 
-![alt text](/images/10-04-2025-policy-as-code-images/app-reg-screenshot.png)
+![Creating a new app registration in Azure](/images/10-04-2025-policy-as-code-images/app-reg-screenshot.png)
 
 #### Assign API Permissions
 We will need to assign API permissions in scope of Graph API to allow the application to read and write Conditional Access policies.
@@ -66,14 +81,14 @@ Select "API permissions" then "Add a permission". Add the following application 
 
 After assigning the permissions, click on "Grant admin consent for ..." to consent to the permissions.
 
-![alt text](/images/10-04-2025-policy-as-code-images/app-reg-api%20permission.png)
+![API permissions configuration screen](/images/10-04-2025-policy-as-code-images/app-reg-api%20permission.png)
 
 #### Create Secret for Authentication
 For my MVP version, I quickly created a set of client credentials consisting of a client-id, tenant-id, and a client-secret. However, this is not best practice, and you should look into federated credentials for your production environment.
 
 To create a secret, click on "Certificates & secrets" and create a new client-secret in the "Client secrets" tab. Copy the value; we will need it later.
 
-![alt text](/images/10-04-2025-policy-as-code-images/app-reg-secret.png)
+![Client secret creation interface](/images/10-04-2025-policy-as-code-images/app-reg-secret.png)
 
 ### Channel for Notification
 Since I'm privately not using a communication platform like MS Teams or Slack, I need to send notifications to a ntfy.sh channel.
@@ -496,30 +511,32 @@ Go to "Settings" then "Secrets and variables". Under Actions, you can create new
 3. AZURE_TENANT_ID
 4. NTFY_URL
 
-![alt text](/images/10-04-2025-policy-as-code-images/github-secrets.png)
+![GitHub repository secrets configuration](/images/10-04-2025-policy-as-code-images/github-secrets.png)
 
-### Start Your First Pipeline Run
+### Deploy Your First Policy
 If everything is set up correctly, you should be able to execute the workflow. Go to "Actions". Select "Deploy Conditional Access Policies" on the left side and Run the workflow.
 
-![alt text](/images/10-04-2025-policy-as-code-images/github-run-pipeline.png)
+![Running the GitHub workflow](/images/10-04-2025-policy-as-code-images/github-run-pipeline.png)
 
-![alt text](/images/10-04-2025-policy-as-code-images/validation.png)
+![Validation step in the workflow](/images/10-04-2025-policy-as-code-images/validation.png)
 
-![alt text](/images/10-04-2025-policy-as-code-images/completed-run.png)
+![Completed workflow run](/images/10-04-2025-policy-as-code-images/completed-run.png)
 
 
 ### Result in Entra ID
 You can see that the policy has been deployed successfully to Entra ID.
 
-![alt text](/images/10-04-2025-policy-as-code-images/conditionalaccesspolicy-azureportal.png)
+![Conditional Access policy in Azure portal](/images/10-04-2025-policy-as-code-images/conditionalaccesspolicy-azureportal.png)
 
 I also received a notification via ntfy.sh
 
-![alt text](/images/10-04-2025-policy-as-code-images/notification.png)
+![Notification of successful deployment](/images/10-04-2025-policy-as-code-images/notification.png)
 
 ## Conclusion
 
-This approach provides a robust way to manage Conditional Access policies as code, offering benefits such as version control, automated validation, peer reviews, reduced attack surface, and easy disaster recovery. By leveraging GitHub Actions and PowerShell, you can automate the deployment process and maintain consistent security policies across your environment.
+### Key Benefits
+This approach provides a robust way to manage Conditional Access policies as code, offering benefits such as version control, automated validation, peer reviews, reduced attack surface, and recovery. By leveraging GitHub Actions and PowerShell, you can automate the deployment process and maintain consistent security policies across your environment.
+
 The code is also available on [GitHub](https://github.com/marcel-ngn-lab/ca-policy-deployment-via-GHA).
 
 ⚠️ **Disclaimer**: This content reflects my personal experience. 
