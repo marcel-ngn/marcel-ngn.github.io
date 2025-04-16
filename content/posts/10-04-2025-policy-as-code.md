@@ -12,7 +12,7 @@ categories = [
 series = [""]
 +++
 
-# Automating Azure Security: Deploying Conditional Access Policies via GitHub Actions
+# ⚙️ Automating Azure Security: Deploying Conditional Access Policies via GitHub Actions
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -34,7 +34,7 @@ I will use GitHub, GitHub Actions, and PowerShell to achieve that.
 
 ![Conditional Access deployment overview diagram](/images/10-04-2025-policy-as-code-images/overview.png)
 
-## Why Use GitHub for Policies?
+## 🤔 Why Use GitHub for Conditional Access Policies?
 
 First of all, yes. It takes some time to configure the whole setup to deploy Conditional Access policies via code. You might be quicker by clicking through the Azure portal. However, this approach definitely brings some benefits with it:
 
@@ -55,7 +55,7 @@ First of all, yes. It takes some time to configure the whole setup to deploy Con
 
 I think there are even more advantages; however, I hope this should be enough to convince you to look into this.
 
-## Building the Solution
+## 👨‍💻 Building the Solution
 
 ### Prerequisites
 
@@ -143,7 +143,7 @@ Job 2: Deploy
 Only runs after the validation job completes successfully
 Runs on Ubuntu
 Checks out the repository code
-Installs and imports the Microsoft Graph PowerShell modules for identity management
+Installs and imports the required Microsoft Graph PowerShell modules
 Deploys the Conditional Access Policies using a PowerShell script (crud-policies.ps1)
 Uses several secrets for authentication:
 
@@ -532,7 +532,7 @@ I also received a notification via ntfy.sh
 
 ![Notification of successful deployment](/images/10-04-2025-policy-as-code-images/notification.png)
 
-## Conclusion
+## 💡 Conclusion
 
 ### Key Benefits
 This approach provides a robust way to manage Conditional Access policies as code, offering benefits such as version control, automated validation, peer reviews, reduced attack surface, and recovery. By leveraging GitHub Actions and PowerShell, you can automate the deployment process and maintain consistent security policies across your environment.
