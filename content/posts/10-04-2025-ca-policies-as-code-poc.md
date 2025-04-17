@@ -69,7 +69,8 @@ We need an app registration in Entra ID. This app registration will have the per
 
 To create the app registration, navigate in the search bar to "App Registrations" and click on "New Registration".
 
-![Creating a new app registration in Azure](/images/10-04-2025-policy-as-code-images/app-reg-screenshot.png)
+![Creating a new app registration in Azure](/images/10-04-2025-policy-as-code-images/register-app-reg.png)
+
 
 #### Assign API Permissions
 We will need to assign API permissions in scope of Graph API to allow the application to read and write Conditional Access policies.
@@ -534,7 +535,6 @@ I also received a notification via ntfy.sh
 
 ## 💡 Conclusion
 
-### Key Benefits
 This approach provides a robust way to manage Conditional Access policies as code, offering benefits such as version control, automated validation, peer reviews, reduced attack surface, and recovery. By leveraging GitHub Actions and PowerShell, you can automate the deployment process and maintain consistent security policies across your environment.
 
 The code is also available on [GitHub](https://github.com/marcel-ngn-lab/ca-policy-deployment-via-GHA).
